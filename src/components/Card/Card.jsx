@@ -1,12 +1,12 @@
 import "./Card.css";
-import cardImage from "../../assets/katie-zaferes.png";
+//import cardImage from "../../assets/katie-zaferes.png";
 import starImage from "../../assets/star.svg";
 
 function Card(props) {
   return (
     <div className="card">
       <div className="card--image">
-        <img src={cardImage} alt="Card Image" />
+        <img src={`../src/assets/${props.img}`} alt="Card Image" />
         <div className="card--badge">
           <span>Sold Out</span>
         </div>
