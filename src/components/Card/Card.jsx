@@ -2,7 +2,7 @@ import "./Card.css";
 import cardImage from "../../assets/katie-zaferes.png";
 import starImage from "../../assets/star.svg";
 
-function Card() {
+function Card(props) {
   return (
     <div className="card">
       <div className="card--image">
@@ -14,17 +14,17 @@ function Card() {
       <div className="card--text">
         <div className="card--text-rating">
           <img src={starImage} alt="Star Rating" className="card--star" />
-          <span className="card--number">5.0</span>
-          <span className="grey">(6)</span>
+          <span className="card--number">{props.rating}</span>
+          <span className="grey">({props.reviewCount})</span>
           <span className="grey"> &bull; </span>
-          <span className="grey">USA</span>
+          <span className="grey">{props.country}</span>
         </div>
       </div>
       <div className="card--title">
-        <p>Life lessons with Katie Zaferes</p>
+        <p>{props.title}</p>
       </div>
       <div className="card--price">
-        <p><strong>From $136</strong> / person</p>
+        <p><strong>From ${props.price}</strong> / person</p>
       </div>
     </div>
   );
