@@ -1,0 +1,19 @@
+.hero{
+  padding:26px 22px;
+  /* max-width:792px; */
+  display: flex;
+  flex-direction: column;
+}
+.hero img{
+  align-self: center;
+  display: flex;
+  width: 100%;
+  max-width:792px;
+  height:auto;
+}
+.hero .hero--heading{
+  font-size: 2.4em;
+  font-weight: 600;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
