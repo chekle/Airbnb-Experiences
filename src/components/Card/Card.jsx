@@ -4,12 +4,18 @@ import starImage from "../../assets/star.svg";
 
 function Card(props) {
   //console.log(props.openSpots);
+  let badgeText;
+  if (props.openSpots === 0) {
+    badgeText = "Sold Out";
+  } else if(props.location === "Online") {
+    badgeText = "Online";
+  }
   return (
     <div className="card">
       <div className="card--image">
         <img src={`../src/assets/${props.img}`} alt="Card Image" />
-        {props.openSpots === 0 && <div className="card--badge">
-          <span>Sold Out</span>
+        {badgeText && <div className="card--badge">
+          <span>{badgeText}</span>
         </div>}
       </div>
       <div className="card--text">
