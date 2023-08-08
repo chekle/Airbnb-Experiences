@@ -25,7 +25,9 @@ function App() {
       <div>
         <Header />
         <Hero />
-        {cardData}
+        <section className="cards-list">
+          {cardData}
+        </section>
       </div>
     </>
   )
