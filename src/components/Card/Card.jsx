@@ -17,7 +17,7 @@ function Card(props) {
           <span className="card--number">{props.rating}</span>
           <span className="grey">({props.reviewCount})</span>
           <span className="grey"> &bull; </span>
-          <span className="grey">{props.country}</span>
+          <span className="grey">{props.location}</span>
         </div>
       </div>
       <div className="card--title">
