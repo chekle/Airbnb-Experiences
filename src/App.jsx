@@ -16,9 +16,10 @@ function App() {
       rating={item.stats.rating}
       reviewCount={item.stats.reviewCount}
       location={item.location}
+      openSpots={item.openSpots}
     />
   );
-  //console.log(Data);
+  //console.log(data);
 
   return (
     <>

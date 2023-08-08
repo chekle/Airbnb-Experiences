@@ -3,13 +3,14 @@ import "./Card.css";
 import starImage from "../../assets/star.svg";
 
 function Card(props) {
+  //console.log(props.openSpots);
   return (
     <div className="card">
       <div className="card--image">
         <img src={`../src/assets/${props.img}`} alt="Card Image" />
-        <div className="card--badge">
+        {props.openSpots === 0 && <div className="card--badge">
           <span>Sold Out</span>
-        </div>
+        </div>}
       </div>
       <div className="card--text">
         <div className="card--text-rating">
